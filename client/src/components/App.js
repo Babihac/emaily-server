@@ -4,9 +4,9 @@ import Header from "./header/Header.component";
 import { connect } from "react-redux";
 import { fetchUserAsync } from "../redux/auth/auth.actions";
 import Landing from "./landing/landing.component";
-const Dashboard = () => <h2>Dashboard</h2>;
+import Dashboard from "./dashboard/dashboard.component";
+import SurveyNew from "./surveyNew/surveyNew.component";
 
-const SurveyNew = () => <h2>New Survey</h2>;
 class App extends Component {
   componentDidMount() {
     const { fetchUser } = this.props;
